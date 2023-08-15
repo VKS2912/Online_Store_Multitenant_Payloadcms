@@ -26,7 +26,7 @@ import { ReportsAnalyticsCollection } from './collections/reports&analytics/inde
 import { OrderCollection } from './collections/order/index'
 
 export default buildConfig({
-  serverURL: 'https://p01--onlinemultitenantstore--test--bis8-pjwp.code.run',
+  serverURL: process.env.URL,
   admin: {
     user: Users.slug,
   },
